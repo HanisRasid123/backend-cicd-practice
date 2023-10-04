@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const mysql = require('mysql2')
 const cors = require('cors')
+const config = require('config')
 
 const PORT = 8000
 
@@ -9,10 +10,10 @@ app.use(express.json())
 app.use(cors({origin: 'http://localhost:3000'}))
 
 const conn = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'book_shop'
+  host: config.get('db.host'),
+  user: config.get('db.user'),
+  password: config.get('db.password'),
+  database: config.get('db.database')
 })
 
 app.listen(PORT, ()=> {
