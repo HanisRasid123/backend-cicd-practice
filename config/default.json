@@ -1,8 +1,8 @@
 {
   "db": {
     "host":"hr-rds-syd-stage01.c2ha6vtz2icn.ap-southeast-2.rds.amazonaws.com",
-    "user": "hanis.rasid",
-    "password": "QA#qyt@f1*65",
+    "user": "admin",
+    "password": "Test2k21",
     "database": "test_db"
   }
 }
