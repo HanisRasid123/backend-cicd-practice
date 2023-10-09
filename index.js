@@ -4,10 +4,10 @@ const mysql = require('mysql2')
 const cors = require('cors')
 const config = require('config')
 
-const PORT = 8000
+const PORT = 8080
 
 app.use(express.json())
-app.use(cors({origin: 'http://localhost:3000'}))
+app.use(cors({origin: 'https://testcicd.controlpoint.healthrfid.com'}))
 
 const conn = mysql.createConnection({
   host: config.get('db.host'),

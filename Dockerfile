@@ -9,4 +9,4 @@ RUN npm install
 
 CMD pm2 start process.yml && tail -f /dev/null
 
-EXPOSE 8000
+EXPOSE 8080
