@@ -6,7 +6,8 @@ WORKDIR /src
 ADD . /src
 
 RUN npm install
-
-CMD pm2 start process.yml && tail -f /dev/null
+RUN npm install -g pm2@latest
 
 EXPOSE 8080
+
+CMD pm2 start process.yml && tail -f /dev/null
