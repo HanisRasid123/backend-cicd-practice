@@ -5,9 +5,9 @@ name: CI/CD for backend
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master" , "HANIS-TEST" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master" , "HANIS-TEST" ]
 
 jobs:
   build_and_test:
